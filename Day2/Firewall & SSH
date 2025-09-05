@@ -1,1 +1,39 @@
+Firewall & Authentication:
+1. What you know? Username & Password
+2. what you have? Username, RSA/ OTP
+3. What you are? Fingerprints, retina, plam etc.,
+
+Keys:
+SSH keys -> Public key and Private Key
+SSH -> Secure Shell
+
+Client Server Architecture
+Whoever provide service is browser
+
+ex: Lawyer -> Server
+    Public -> Client
+facebook.com server, client is browser
+Linux server -> Clients - Putty, Mobaxterme, mac terminal
+
+Git bash is one of the SSH client, git is a mini linux in windows etc.,
+
+c:\users\<username> -windows(\)
+cd /c/ -> Linux(/)
+
+In Git bash we can run some linux commands
+
+Change directory -> CD
+SSH-keygen -f daws-86s
+
+Firewall == Security groups
+
+inbound and outbound
+ssh -> secure shell
+port -> 80
+ec2-user
+
+ssh -i <privatekey> ec2-user@ip_address
+
+list of files -> ls -l
+
 
