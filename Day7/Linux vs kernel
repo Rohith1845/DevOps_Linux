@@ -1,0 +1,110 @@
+Ps -ef -> list all the process
+top
+
+kill pid
+kill -9 pid
+
+netstat -lntp
+
+Database -> Application -> web -> Load balancer -> user
+
+CRUD
+====
+1. Create operation
+2. Read operation
+3. Update operation
+4. Delete operation
+
+amazon.in
+
+devops-practice -> AMI (Amazon Machine Image)
+
+What is image == image is everything around us
+
+Image = OS + some required softwares
+
+Linux is OS or Kernel
+=====================
+
+Linus Torwalds invented -> Linux + Git
+
+Mac -> Hardware + MacOS, we can't replace mac OS. They are selling Mac OS + Hardware
+Dell -> Hardware + OS(Optional) -> we have freedom to install any os
+
+dominating OS for servers was Unix
+
+Unix -> Hardware + UnixOS
+
+He completely developed a OS from the scratch using C language
+
+Kernel = a component that connects with hardware
+OS = Kernel + some utilities or application for user
+
+Architecture:
+
+Hardware - Kernel - shell - Applications or Utilities
+
+Centos, fedora, ubuntu, Android, Oracle suse, Redhat
+In these Redhat is popular
+
+Redhat Family
+=============
+Opensource vs Enterprise
+
+Opensource -> free and community driven
+Enterprise -> we pay money for support. If there are defects immediately we get help
+
+Enterprise -> opensource + support defects
+
+Redhat == Kernel + Application Utilities + support
+Amazon Linux = Redhat == Centos == Fedora
+
+devops-practice = RHEL based
+
+RDBMS -> relatinal database management system
+Excel -> Rows and cloumns = sheets
+RDBMS = Rows and columns = tables
+
+MYSQL, MsSQL Admin, Oracle Admin
+3306 -> MySQL port number
+
+default admin username == root
+password needs to setup
+
+mysql_secure_installation --set-root-pass ExpenseAPP@1
+
+IP, Port, Protocol, Username and password/key
+
+https
+IP/facebook.com
+username
+password
+443
+
+mysql -u root -p<password>
+
+-p<password> -> nospace between -p and password
+
+mysql -u root -pExpenseAPP@1
+
+database Linux Server -> Database server Installation -> schema/database -> tables -> data
+
+Application Tier
+================
+dnf module disable nodejs -y -> disabling default nodejs version
+dnf module enable nodejs:20 -y -> enabling the nodejs required version
+
+dnf install nodejs -y
+
+useradd expense
+system users or service accounts -> non human users
+
+mkdir /app
+
+curl -o /tmp/backend <application url>
+
+unzip /tmp/backend
+
+/tmp -> temporary files or intermediate files
+
+
