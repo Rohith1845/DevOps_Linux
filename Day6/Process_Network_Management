@@ -1,0 +1,136 @@
+Process Management
+==================
+Team Manager
+Team lead
+Senior Engineer
+Junior Engineer
+Trainees
+
+ls -l -> it will creates one process and assign id i.e., PID and displays results
+
+TL -> assign task to Senior Engineer
+TL is his parent for that task, senior manager is child
+TL creates one process and his process id is PPID - Parent Process Instance id.
+TL assigns this to senior Engineer PID - Process instance ID
+
+PS command -> Lists all the processes issued
+
+Nginx install command - sudo dnf/apt/yum install nginx -y 
+start nginx - systemctl start nginx
+status - systemctl status nginx
+
+To check nginx process is running or not
+ps -ef -> checking all the process running
+ps -ef | grep nginx
+
+Sleep 10 -> it makes linux 10 secs to sleep and no command will work at that time
+
+1. Foreground process -> Blocks all the commands or actions you are performing.
+Ex: windows os,
+2. Background process -> Daily tasks that are running in background
+Ex: nginx
+
+sleep 10 & : &-> takes to background
+
+top command -> helps fetch along with memory and cpu utilization of a process
+
+Consuming high CPU -> means high traffic ex: users traffic increasing
+10 users, 10% cpu 25% RAM
+100 users, 20% cpu 40% RAM
+
+Sometimes users are less but the cpu utilization is more means cpu is not releasing the process that are completed
+
+restart
+
+servers ->get all the logs, app logs, server logs etc.,
+
+restart the server immediately and check logs why the issue happens.
+
+we can also kill the process after restarting the server even the issue remains same 
+
+kill pid -> killing the process (request)
+kill child process
+
+kill -9 -> force kill(demand)
+
+
+Network Management
+==================
+Aws is responsible to provide power, network etc.,
+
+How do check wheather a port is running or not is
+netstat -lntp
+
+3 tier architecture
+===================
+Desktop vs web based
+
+Desktop:
+resource usage is more
+installation, repair and upgrade is in our hands
+occastionally hangs
+storage in local, if crashes no recovery
+can't access anywhere
+no security
+
+web based
+=========
+provides security -> username, password
+
+Example
+Road side hotel  -- 1 Tier
+===============
+responsibilities = cooking, money collection, serving
+handles 5-10 members single person
+
+if 20 mem can't handle
+
+Hotel -- 2 Tier
+=====
+owner issues tokens
+cook is cooking food
+handles 20 members
+order managment and cooking 
+
+if 50 mem can't handle 
+
+Restaurant model
+================
+Captain -> welcomes the quest and shows the table
+waiter -> taking order, order management
+chef -> cooking food
+waiter -> granishes and serves food
+
+handles 50 members
+
+Data raw format(SQL or No SQL)-> applications server (java, python, golang etc.,)-> web server -> Load balancer
+Everything is in single server is 1 tier
+
+Database -> Application and webserver(2 teir)
+
+load balancer- webserver -> application server -> database server (3 tier)
+
+decoupling and loose coupling
+
+web tier
+========
+load balancing
+web server
+html, css, javascript
+
+Application Tier
+================
+Java, .net, c++, python etc.,
+
+curd operations by coonecting with database
+
+Database tier
+=============
+Sroting data
+SQL
+MySQL
+Postgress SQL
+
+Mango db
+
+redis
